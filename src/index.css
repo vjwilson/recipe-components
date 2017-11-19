@@ -74,17 +74,17 @@ table {
   align-items: center;
   display: flex;
   grid-area: header;
-  padding-bottom: .5em;
-  padding-top: .5em;
+  padding: .5rem;
 }
 
 .page-head h1 {
-  margin-bottom:  0;
+  margin-bottom: 0;
 }
 
 .navigation {
   grid-area: sidebar;
   list-style-type: none;
+  margin: 0;
   padding: .5em;
 }
 
@@ -95,5 +95,6 @@ table {
 }
 
 .component-page {
-  grid-area:  content;
+  grid-area: content;
+  padding: .5rem;
 }

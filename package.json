@@ -49,9 +49,12 @@
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy:docs": "npm run -d build:docs",
+    "deploy:docs": "gh-pages -d build"
   },
+  "homepage": "https://vjwilson.github.io/recipe-components/",
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}"
@@ -99,6 +102,7 @@
     "chokidar": "^1.7.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
+    "gh-pages": "^1.1.0",
     "npm-run-all": "^4.1.2",
     "react-docgen": "^2.20.0"
   }
