@@ -1,15 +1,23 @@
 /* Global styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
   color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: .75em;
+  margin-top: 0;
 }
 
 a, a:visited {
   color: #666666;
-}
-
-.clear {
-  clear: both;
 }
 
 td {
@@ -25,11 +33,20 @@ table {
 }
 
 /* Documentation site component styles */
+.page-grid {
+  display:  grid;
+  grid-gap: 10px;
+  grid-template-areas: "....... header"
+                       "sidebar content";
+  grid-template-columns: 250px 1fr;
+}
+
 .example {
-  border: solid 1px #d3d3d3;
-  padding: 16px;
-  margin-bottom: 16px;
   background-color: #f4f6f9;
+  border: solid 1px #d3d3d3;
+  grid-area: content;
+  margin-bottom: 16px;
+  padding: 16px;
 }
 
 .example h4:first-of-type {
@@ -40,22 +57,43 @@ table {
    margin-bottom: 0;
 }
 
+.props tbody tr:nth-child(odd) {
+  background-color: #f4f6f9;
+}
+
 .props tr td:last-of-type {
   text-align: center;
 }
 
 .props th, td {
+  padding: .5em;
   text-align: left;
-  padding: 5px;
+}
+
+.page-head {
+  align-items: center;
+  display: flex;
+  grid-area: header;
+  padding-bottom: .5em;
+  padding-top: .5em;
+}
+
+.page-head h1 {
+  margin-bottom:  0;
 }
 
 .navigation {
-  float: left;
-  width: 250px;
+  grid-area: sidebar;
   list-style-type: none;
-  padding: 0;
+  padding: .5em;
 }
 
-.componentpage {
-  margin-left: 275px;
+.navigation li {
+  background-color: lightsteelblue;
+  margin-bottom: .5em;
+  padding: .5em;
+}
+
+.component-page {
+  grid-area:  content;
 }

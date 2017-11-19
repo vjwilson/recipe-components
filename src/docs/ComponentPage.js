@@ -7,7 +7,7 @@ const ComponentPage = ({ component }) => {
   const { name, description, props, examples } = component;
 
   return (
-    <div className="componentpage">
+    <div className="component-page">
       <h2>{name}</h2>
       <p>{description}</p>
 

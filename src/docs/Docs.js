@@ -24,7 +24,10 @@ export default class Docs extends React.Component {
       : componentData[0];
 
     return (
-      <div>
+      <div class="page-grid">
+        <div class="page-head">
+          <h1>Recipe Components</h1>
+        </div>
         <Navigation components={componentData.map(component => component.name)} />
         <ComponentPage component={component} />
       </div>
