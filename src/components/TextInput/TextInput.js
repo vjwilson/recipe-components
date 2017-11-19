@@ -29,7 +29,9 @@ function TextInput({
         className='text-input-control'
         style={error && { border: '1px solid red' }}
         {...props} />
-        {children}
+        <div>
+          {children}
+        </div>
       {error && <div className="error" style={{color: 'red'}}>{error}</div>}
     </div>
   );

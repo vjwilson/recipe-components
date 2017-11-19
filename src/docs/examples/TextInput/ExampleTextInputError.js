@@ -1,5 +1,6 @@
 import React from 'react';
 import TextInput from 'recipe-components/TextInput';
+import FormGroup from 'recipe-components/FormGroup';
 
 /** TextBox with error */
 export default class ExampleOptional extends React.Component {
@@ -32,17 +33,19 @@ export default class ExampleOptional extends React.Component {
   render() {
 
     return (
-      <TextInput
-        id="example-required"
-        label="Email"
-        name="email"
-        value={this.state.email}
-        onChange={this.handler}
-        required
-        error={this.state.error}
-      >
-        Type a valid email.
-      </TextInput>
+      <FormGroup>
+        <TextInput
+          id="example-required"
+          label="Email"
+          name="email"
+          value={this.state.email}
+          onChange={this.handler}
+          required
+          error={this.state.error}
+        >
+          Type a valid email.
+        </TextInput>
+      </FormGroup>
     )
   }
 }

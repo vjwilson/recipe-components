@@ -1,5 +1,6 @@
 import React from 'react';
 import TextInput from 'recipe-components/TextInput';
+import FormGroup from 'recipe-components/FormGroup';
 
 /** Optional TextBox */
 export default class ExampleOptional extends React.Component {
@@ -25,12 +26,14 @@ export default class ExampleOptional extends React.Component {
   }
   render() {
     return (
-      <TextInput
-        id="example-optional"
-        label="Middle Name"
-        name="middleName"
-        onChange={this.handler}
-       />
+      <FormGroup>
+        <TextInput
+          id="example-optional"
+          label="Middle Name"
+          name="middleName"
+          onChange={this.handler}
+         />
+      </FormGroup>
     )
   }
 }

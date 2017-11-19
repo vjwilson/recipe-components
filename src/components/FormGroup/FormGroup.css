@@ -1,0 +1,24 @@
+.form-group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group .field {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group .field:last-child {
+  margin-bottom: 0;
+}
+
+.form-group .field > * {
+  margin-bottom: .5rem;
+}
+
+.form-group .field > *:last-child {
+  margin-bottom: 0;
+}
