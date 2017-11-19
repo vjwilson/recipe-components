@@ -1,0 +1,7 @@
+.text-input {
+  display: flex;
+}
+
+.text-input-control {
+  padding: .5em;
+}
