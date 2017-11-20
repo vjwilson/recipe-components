@@ -4,11 +4,22 @@
   flex-direction: column;
 }
 
+.horizontal-form-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .form-group .field {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+}
+
+.horizontal-form-group .field {
+  align-items: center;
+  flex-direction: row;
+  margin-right: 1rem;
 }
 
 .form-group .field:last-child {
@@ -21,4 +32,13 @@
 
 .form-group .field > *:last-child {
   margin-bottom: 0;
+}
+
+.horizontal-form-group .field > * {
+  margin-bottom: 0;
+  margin-right: .375rem;
+}
+
+.horizontal-form-group .field > *:last-child {
+  margin-right: 0;
 }

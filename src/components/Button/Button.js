@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/** Display a button for an action to be taken */
 function Button({ onClick, children }) {
   return (
     <button
