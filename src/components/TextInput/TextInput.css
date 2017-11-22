@@ -3,5 +3,7 @@
 }
 
 .text-input-control {
-  padding: .5em;
+  font-size: 1rem;
+  height: 2em;
+  padding: .5rem;
 }

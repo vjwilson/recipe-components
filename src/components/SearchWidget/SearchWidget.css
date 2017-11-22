@@ -1,0 +1,18 @@
+.search-widget {
+  display: inline-block;
+  position: relative;
+}
+
+.search-widget-input {
+  font-size: 1rem;
+  height: 2em;
+  padding: .5rem;
+}
+
+.search-widget .btn {
+  box-shadow: none;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

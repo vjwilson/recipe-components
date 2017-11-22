@@ -16,4 +16,19 @@ describe('Button', () => {
 
       expect(mockHandler).toHaveBeenCalled();
   });
+
+  test('should have the appropriate optional class when the square flag is set', () => {
+    const mockHandler = jest.fn();
+
+      const wrapper = shallow(
+        <Button
+          onClick={mockHandler}
+          square
+        >
+          X
+        </Button>
+      );
+
+      expect(wrapper.hasClass('btn-square')).toBe(true);
+  });
 });

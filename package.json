@@ -51,6 +51,7 @@
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
+    "test:debug": "node --inspect-brk scripts/test.js --env=jsdom  --runInBand",
     "predeploy:docs": "npm run -d build:docs",
     "deploy:docs": "gh-pages -d build"
   },

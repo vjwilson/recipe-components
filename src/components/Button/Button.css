@@ -10,7 +10,14 @@
 }
 
 .btn:hover {
-  background-color: #FFEE81;
+  background-color: #e6ca19;
   color: #393939;
   cursor: pointer;
+}
+
+.btn-square {
+  height: 2rem;
+  overflow: hidden;
+  text-align: center;
+  width: 2rem;
 }
