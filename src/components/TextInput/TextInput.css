@@ -3,6 +3,8 @@
 }
 
 .text-input-control {
+  border: 1px solid #330;
+  border-radius: 4px;
   font-size: 1rem;
   height: 2em;
   padding: .5rem;

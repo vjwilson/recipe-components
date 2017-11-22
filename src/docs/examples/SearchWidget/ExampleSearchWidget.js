@@ -7,7 +7,8 @@ export default class ExampleSearchWidget extends React.Component {
     super(props);
 
     this.state = {
-      searchText: ''
+      searchText: '',
+      lastSubmittedSearch: ''
     };
   }
 
@@ -16,7 +17,10 @@ export default class ExampleSearchWidget extends React.Component {
   }
 
   onSubmit = (value) => {
-    alert(value);
+    this.setState({
+      searchText: '',
+      lastSubmittedSearch: value
+    });
   }
 
   render() {
@@ -28,6 +32,8 @@ export default class ExampleSearchWidget extends React.Component {
           onSubmit={this.onSubmit}
         />
        <p>Search value: {this.state.searchText ||
+        '(none)'}</p>
+       <p>Last submitted search value: {this.state.lastSubmittedSearch ||
         '(none)'}</p>
       </div>
     );

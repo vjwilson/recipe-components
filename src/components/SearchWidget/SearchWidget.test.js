@@ -1,7 +1,11 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
+// system under test
 import SearchWidget from './SearchWidget';
+
+// sub-components to test
+import MagnifyingGlassIcon from '../MagnifyingGlassIcon';
 
 describe('SearchWidget', () => {
   test('should render a text input', () => {
@@ -15,6 +19,20 @@ describe('SearchWidget', () => {
     const inputElement = wrapper.find('input');
 
     expect(inputElement.hasClass('search-widget-input')).toBe(true);
+  });
+
+  test('should render a submit-search button with a magnifying glass icon', () => {
+    const wrapper = mount(
+      <SearchWidget
+        value=""
+        onChange={() => {}}
+        onSubmit={() => {}}
+      />
+    );
+
+    const buttonElement = wrapper.find('button');
+
+    expect(buttonElement.contains(<MagnifyingGlassIcon />)).toBe(true);
   });
 
   test('should render its value prop in its input child', () => {
@@ -65,6 +83,24 @@ describe('SearchWidget', () => {
 
     const mockKeyPress = { key: 'Enter' };
     inputElement.simulate('keyPress', mockKeyPress);
+
+    expect(submitHandler.mock.calls).toHaveLength(1);
+    expect(submitHandler.mock.calls[0][0]).toEqual(currentValue);
+  });
+
+  test('should call submit handler with current value when button clicked', () => {
+    const currentValue = 'cake';
+    const submitHandler = jest.fn();
+    const wrapper = mount(
+      <SearchWidget
+        value={currentValue}
+        onChange={() => {}}
+        onSubmit={submitHandler}
+      />
+    );
+    const buttonElement = wrapper.find('button');
+
+    buttonElement.simulate('click');
 
     expect(submitHandler.mock.calls).toHaveLength(1);
     expect(submitHandler.mock.calls[0][0]).toEqual(currentValue);
