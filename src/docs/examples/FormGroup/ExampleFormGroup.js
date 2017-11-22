@@ -54,6 +54,6 @@ export default class ExampleOptional extends React.Component {
           required
          />
       </FormGroup>
-    )
+    );
   }
 }
