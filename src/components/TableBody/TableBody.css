@@ -1,0 +1,12 @@
+.recipe-table-body tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.recipe-table-body tr:nth-child(even) {
+  background-color: #FFF9D3;
+}
+
+.recipe-table-body td {
+  border-bottom: solid 1px #eee;
+  padding: .75rem;
+}

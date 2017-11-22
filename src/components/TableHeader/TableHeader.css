@@ -1,0 +1,8 @@
+.recipe-table-header {
+  background-color: #ffe332;
+  border-bottom: 1px solid #330;
+}
+
+.recipe-table-header th {
+  padding: .75rem;
+}
