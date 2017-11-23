@@ -56,7 +56,7 @@ function createPackageFile() {
     } = packageData;
 
     const minimalPackage = {
-      name: 'ps-react-vjwilson',
+      name: 'recipe-components',
       author,
       version,
       description,
