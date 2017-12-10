@@ -1,4 +1,5 @@
 import React from 'react';
+import Badge from 'recipe-components/Badge';
 import Card from 'recipe-components/Card';
 import CardHeader from 'recipe-components/CardHeader';
 import CardBody from 'recipe-components/CardBody';
@@ -12,6 +13,9 @@ export default class ExampleCard extends React.Component {
       <Card>
         <CardHeader>
           <Heading level="2">Pecan Pie</Heading>
+          <Badge>
+            Dessert
+          </Badge>
           <p>Author: Jean Wilson</p>
         </CardHeader>
         <CardBody>

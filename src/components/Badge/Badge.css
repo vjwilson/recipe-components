@@ -1,0 +1,10 @@
+.badge {
+  animation: fadein 2s;
+  background-color: #333300;
+  border-radius: 1rem;
+  color: #ffee81;
+  font-size: .8rem;
+  margin-right: .6rem;
+  padding: .4em .6em;
+  position: relative;
+}
