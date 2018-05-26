@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## 0.1.3 (2018-05-26)
+
+Fix:
+
+  - add license field to package.json
+
 ## 0.1.2 (2018-05-26)
 
 Fix:
