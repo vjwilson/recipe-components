@@ -1,5 +1,11 @@
 # CHANGELOG.md
 
+## 0.1.2 (2018-05-26)
+
+Fix:
+
+  - CHANGELOG file location and publish process
+
 ## 0.1.1 (2018-05-26)
 
 Security:
