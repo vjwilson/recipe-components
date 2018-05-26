@@ -18,7 +18,7 @@
     "toolkit",
     "recipes"
   ],
-  "private": true,
+  "private": false,
   "repository": "https://github.com/vjwilson/recipe-components",
   "dependencies": {
     "highlight.js": "^9.12.0",
