@@ -46,7 +46,7 @@
     "build:commonjs": "cross-env NODE_ENV=production babel ./src/components --out-dir ./lib --ignore test.js",
     "prebuild:lib": "rimraf lib",
     "build:lib": "npm-run-all --parallel build:commonjs build:css build:copy-files",
-    "prepubilsh": "npm run build:lib"
+    "prepublish": "npm run build:lib"
   },
   "homepage": "https://vjwilson.github.io/recipe-components/",
   "jest": {
